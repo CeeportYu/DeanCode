@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>轟炸支援</title>
+    <link rel="stylesheet" href="./css/MoleCss.css">
+
+
+</head>
+
+<body>
+
+    <!-- <div id="hintMessage">
+        <p>盡速殲滅所有恐怖分子!</p>
+
+    </div> -->
+
+
+
+    <img src="./img/dead.gif" width="500px" id="failPic">
+    <img src="./img/likeaboss.gif" width="600px" id="winPic">
+
+    <div id="tableDiv">
+        <div id="playerScore">
+            <h1>剩餘時間:&nbsp;<span id="setTime">0</span>&nbsp;秒</h1>
+        </div>
+
+        <div id="terrLeft">
+            <h1>剩餘恐怖分子:&nbsp;<span id="terrNum">0</span></h1>
+            </h1>
+
+        </div>
+        <div id="playerMoney">
+            <h1>我的金錢:&nbsp;<span id="setMoney">0</span></h1>
+        </div>
+
+        <div id="shop">
+            <h1>軍火商:</h1>
+            <input type="button" id="b  uyBomb1" class="shopButton" value="購買小型炸彈(20)"
+                onclick="weaponShop.buyLittleBomb()">
+            <br><br>
+            <input type="button" id="buyDispersedBomb" class="shopButton" value="購買隨機轟炸(100)"
+                onclick="weaponShop. buyDispersedBomb()">
+            <br><br>
+            <input type="button" id="buyRayda" class="shopButton" value="購買雷達(120)" onclick="weaponShop.buyRayda()">
+            <br><br>
+        </div>
+
+        <div id="weapenHouse">
+            <p>軍火庫&nbsp;剩餘數量</p>
+
+            <input type="button" value="小型炸彈" class="selectBomb" onclick="fireSystem.switchOfLittleBomb()"
+                id="littleBombButton">&nbsp;<span id="littleBombNum">0</span>
+            <br><br>
+            <input type="button" value="隨機轟炸" class="selectBomb"
+                onclick="fireSystem.switchOfdispersedBomb();fireSystem.dispersedBomb()" id="disButton">&nbsp;<span
+                id="disperBombNum">0</span>
+            <br><br>
+            <input type="button" value="掃描雷達" class="selectBomb" onclick="fireSystem.rayDa();fireSystem.switchOfRayda()"
+                id="RayButton">&nbsp;<span id="Rayda">0</span>
+
+
+        </div>
+
+        <table>
+            <!-- onclick="fireSystem.playerClick(id)" -->
+            <tr>
+                <td id="10" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="11" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="12" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="13" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="14" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="15" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="16" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="17" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="18" onclick="fireSystem.playerClickLittle(id)"></td>
+            </tr>
+            <tr>
+                <td id="20" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="21" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="22" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="23" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="24" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="25" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="26" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="27" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="28" onclick="fireSystem.playerClickLittle(id)"></td>
+            </tr>
+            <tr>
+                <td id="30" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="31" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="32" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="33" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="34" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="35" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="36" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="37" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="38" onclick="fireSystem.playerClickLittle(id)"></td>
+            </tr>
+            <tr>
+                <td id="40" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="41" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="42" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="43" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="44" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="45" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="46" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="47" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="48" onclick="fireSystem.playerClickLittle(id)"></td>
+            </tr>
+            <tr>
+                <td id="50" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="51" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="52" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="53" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="54" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="55" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="56" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="57" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="58" onclick="fireSystem.playerClickLittle(id)"></td>
+            </tr>
+            <tr>
+                <td id="60" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="61" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="62" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="63" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="64" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="65" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="66" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="67" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="68" onclick="fireSystem.playerClickLittle(id)"></td>
+            </tr>
+            <tr>
+                <td id="70" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="71" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="72" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="73" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="74" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="75" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="76" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="77" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="78" onclick="fireSystem.playerClickLittle(id)"></td>
+            </tr>
+            <tr>
+                <td id="80" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="81" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="82" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="83" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="84" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="85" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="86" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="87" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="88" onclick="fireSystem.playerClickLittle(id)"></td>
+            </tr>
+            <tr>
+                <td id="90" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="91" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="92" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="93" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="94" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="95" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="96" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="97" onclick="fireSystem.playerClickLittle(id)"></td>
+                <td id="98" onclick="fireSystem.playerClickLittle(id)"></td>
+            </tr>
+        </table>
+
+        <form>
+            <input type="button" id="fireButton" value="Fire!" onclick="fireSystem.fire(fireSystem.bombingLocations)">
+        </form>
+
+
+        <div class="controlPanel">
+            <input type="button" value="開始遊戲" id="startButton" onclick="initSystem.initStart()"><br><br>
+            <input type="button" value="重新開始" id="restartButton" onclick="initSystem.restartGame()">
+        </div>
+
+        <div id="hintMessage">
+            <p></p>
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <audio src="./sound/pickBomb.mp3" id="putBomb" class="soundtract"></audio>
+
+    <audio src="./sound/explosinSound.wav" id="explosion" class="soundtract"></audio>
+
+    <audio src="./sound/buyThing.wav" id="buyThing" class="soundtract"></audio>
+
+    <audio src="./sound/Raydasound.mp3" id="rayDa" class="soundtract"></audio>
+
+    <audio src="./sound/getMoney.mp3" id="getMoney" class="soundtract"></audio>
+
+    <audio src="./sound/victory2.mp3" id="victory" class="soundtract"></audio>
+
+    <audio src="./sound/fail.mp3" id="failMusic" class="soundtract"></audio>
+
+    <audio src="./sound/gameStart.mp3" id="gameStart" class="soundtract"></audio>
+
+    <audio src="./sound/changeWeapen.mp3" id="changeWeapen" class="soundtract"></audio>
+
+    <audio src="./sound/outOf.mp3" id="outOf" class="soundtract"></audio>
+
+
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/MoleJs.js"></script>
+</body>
+
+
+
+
+</html>

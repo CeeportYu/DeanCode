@@ -1,0 +1,241 @@
+body {
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../img/background.jpg");
+    background-size: cover;
+}
+
+#tableDiv {
+    /* border: 2px black solid; */
+    position: absolute;
+    width: 1000px;
+    height: 1000px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    bottom: 50%;
+    transform: translateX(-50%);
+    /* animation: LKK;
+    animation-duration: 3s;
+    animation-iteration-count: infinite; */
+}
+
+#playerScore {
+    font-family: 'Times New Roman', Times, serif;
+    top: 50px;
+    left: 400px;
+    position: absolute;
+}
+
+#terrLeft {
+    font-family: 'Times New Roman', Times, serif;
+    top: 50px;
+    left: 5px;
+    position: absolute;
+}
+
+#terrNum {
+    color: blue;
+}
+
+#setTime {
+    color: blue;
+}
+
+#playerMoney {
+    font-family: 'Times New Roman', Times, serif;
+    top: 50px;
+    right: 30px;
+    position: absolute;
+}
+
+#setMoney {
+    color: blue;
+}
+
+table {
+    border-collapse: collapse;
+    position: absolute;
+    border: red 2px solid;
+    bottom: 200px;
+    left: 200px;
+}
+
+td {
+    border: black 2px solid;
+    width: 60px;
+    height: 60px;
+}
+
+td:hover {
+    background-color: blue;
+}
+
+form {
+    position: absolute;
+    bottom: 130px;
+    left: 450px;
+    background-color: rgb(83, 175, 19);
+}
+
+form input {
+    background-color: rgba(5, 235, 93, 0.719);
+    border-color: rgb(197, 101, 12);
+    font-size: 2em;
+}
+
+#shop {
+    font-family: 標楷體;
+    color: blue;
+    position: absolute;
+    top: 200px;
+    right: -50px;
+}
+
+/*  */
+
+.prehit {
+    background-image: url(../img/preaim.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hit {
+    background-image: url(../img/dead.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.skull {
+    background-image: url(../img/Skull.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.miss {
+    background-image: url(../img/miss.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.radar {
+    background-image: url(../img/radar.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.terr {
+    background-image: url(../img/terrorist.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* #hintMessage {
+    width: 50px;
+    position: absolute;
+    color: red;
+    font-family: 標楷體;
+    font-size: 50px;
+    top: 500px;
+    left: 50px;
+} */
+
+#hintMessage {
+    writing-mode: vertical-lr;
+    width: 50px;
+    position: absolute;
+    color: red;
+    font-family: 標楷體;
+    font-size: 50px;
+    font-weight: bolder;
+    top: 500px;
+    left: 50px;
+}
+
+#weapenHouse {
+    color: blue;
+    font-family: 標楷體;
+    font-size: 25px;
+    position: absolute;
+    top: 200px;
+    left: 5px;
+}
+
+.selectBomb {
+    font-family: 標楷體;
+    font-size: 25px;
+}
+
+.shopButton {
+    font-family: 標楷體;
+    font-size: 25px;
+}
+
+.selectBomb:hover {
+    color: red;
+}
+
+.explosion {
+    background-image: url(../img/explode.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.soundtract {
+    display: none;
+}
+
+.flash {
+    font-family: 標楷體;
+    font-size: 25px;
+    animation: LKK;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes LKK {
+    0% {
+        box-shadow: 0px 0px 30px red;
+    }
+    30% {
+        box-shadow: 0px 0px 30px green;
+    }
+    40% {
+        box-shadow: 0px 0px 30px yellow;
+    }
+    50% {
+        box-shadow: 0px 0px 30px purple;
+    }
+    75% {
+        box-shadow: 0px 0px 30px blue;
+    }
+}
+
+.controlPanel {
+    position: absolute;
+    bottom: 90px;
+    right: -30px;
+}
+
+#startButton {
+    font-family: 標楷體;
+    font-size: 50px;
+}
+
+#restartButton {
+    font-family: 標楷體;
+    font-size: 50px;
+}
+
+#failPic {
+    display: none;
+}
+
+#winPic {
+    display: none;
+}
