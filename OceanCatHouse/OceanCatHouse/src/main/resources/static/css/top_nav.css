@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    
+    /* 字體設定 */
+    font-family:"Noto Sans TC", 'Times New Roman', Times, serif;
+}
+
+.navbar {
+    position: sticky;
+    top:0;
+    z-index: 99;
+}
+
+
+#mainTitle {
+    font-size: 31px;
+    margin-left: 25px;
+}
+
+.navColor {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+   }
+
+.navbar-nav .navLink {
+	font-size:20px;
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+
+
+.navColor:hover {
+    color: black;
+}
+
+
+input:focus {
+    outline: none;
+}
+
+/* header 和footer的顏色 備選色  #D9B35A #FFD77A #FADF84 #FCE1C5	*/
+.mainColor {
+    background-color:  #62A5A1;
+}
+
+.btn-search {
+    margin: 0px 10px;
+    padding: 0 30px;
+    border-radius: 5px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    font-weight: 700;
+    border: none;
+    color: white;
+    background-color: #B54484;
+}
+
+.btn-search:hover {
+    box-shadow: 0px 0px 10px 0px #e086b9;
+}
+
+
+#userConsole {
+    position: relative;
+}
+
+#userIcon {
+    margin-right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+
+
+#userName {
+    margin-right: 15px;
+    border: none;
+    background: transparent;
+}
+
+
+#userConsole:hover ul, #userConsole ul:hover {
+    display: block;
+}
+
+#userConsole ul {
+    display: none;
+    position: absolute;
+    top:50px;
+    right:5px;
+    padding: 0;
+    margin:0;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, .3);
+    box-shadow: 0px 0px 3px 1px rgba(168, 226, 251, 0.292);
+}
+
+#userConsole ul li {
+	padding: 0;
+    margin:0;
+    list-style: none;
+    width: 100px;
+    line-height: 35px;
+    text-align: center;
+    background-color: white;
+}
+
+#userConsole ul li a {
+    text-decoration: none;
+    color: #444;
+}
+
+
+#userConsole ul li:hover {
+    background: rgba(245, 222, 179, 0.353);
+}
+
+
+
+em {
+    font-style: normal;
+    margin: 0 20px;
+    font-weight: 700;
+    color: #777;
+}

@@ -1,0 +1,195 @@
+* {
+    padding: 0;
+    margin: 0;   
+    letter-spacing:1px; 
+}
+
+body {
+	background:#eee;
+}
+
+.container {
+	background:white;
+	padding:30px 0 50px 0;
+	min-width:1020px;
+}
+
+.carou li, .blank li {
+    list-style: none;
+    display: inline-block;
+}
+
+
+.carou h2 {
+    position: absolute;
+    top: 25px;
+    font-size: 38px;
+    line-height: 70px;
+    background: linear-gradient(to right, #222, transparent);
+    color: #eee;
+    text-shadow: 1px 1px 1px black;
+    text-indent: 2em;
+    border-radius:5px 0 0 5px;
+}
+
+/* Carousel */
+.focusBlock {
+    position: relative;
+    width: 980px;
+    height: 575px;
+    overflow: hidden;
+    text-align: center;
+border-radius:5px;
+    margin: 0px auto;
+   
+}
+
+.focusBlock .carou li img {
+    width: 920px;
+    height: 575px;
+    border-radius:5px;
+    
+}
+
+.focusBlock .carou li {
+    float: left;
+    width: 980px;
+    height: 575px;
+    
+}
+
+
+
+.focusBlock .carou {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 600%;
+    padding: 0;
+}
+
+
+.arrow-lef, .arrow-r {
+    display: none;
+    position: absolute;
+    font-size:40px;
+  	font-weght:700;
+    top:50%;
+    margin-top: -20px;
+    width: 30px;
+    height: 50px;
+    background: rgba(0, 0, 0, .7);
+    border:none;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-size: 18px;
+    z-index: 5;
+    opacity: .7;
+    cursor: pointer;
+    border-radius:5px;
+}
+
+
+.arrow-r  {
+    right:0;
+   
+}
+
+
+
+.blank {
+    position: absolute;
+    display: block;
+    bottom: 30px;
+    left: 30%;
+    margin: 0 auto;
+    padding:10px 15px;
+    background:rgba(0,0,0,.3); 
+    border-radius: 10px;
+}
+
+.blank li {
+    float: left;
+    width: 35px;
+    border-bottom: 10px solid rgba(0, 0, 0, .7);
+    box-shadow: 0 0 2px 2px gray;
+    margin:0 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.blank .current {
+    border-color: white;
+}
+
+
+
+
+/* recommendRecipe */
+
+.recommendRec {
+    margin-top: 70px;
+}
+
+.recommendRec ul {
+    padding: 0;
+}
+
+
+.recommendRec ul li {
+    height: 190px;
+    margin-top: 10px;
+    padding: 10px;
+    list-style: none;
+    border-left: 10px solid rgba(62, 199, 183, 0.3);
+}
+
+.recommendRec ul li:hover {
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, .3);
+}
+
+.recommendRec ul li img {
+    height: 170px;
+    width: 227px;
+    background-color: wheat;
+    float: left; 
+}
+
+
+h3 {
+	font-size:32px;
+}
+
+.showLines {
+    margin: 5px 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    color: #222;
+}
+
+.recommendRec li h4 {
+    font-size: 30px;
+    line-height: 40px;
+
+}
+
+.recommendRec li p {
+    -webkit-line-clamp: 3;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.recommendRec li span {
+    display: inline-block;
+    color: #888;
+    font-size: 17px;
+}
+
+footer {
+	margin-top:0;
+}
+

@@ -1,0 +1,113 @@
+.barNav {
+    position: absolute;
+    top: 350px;
+    width: 100px;
+    height:100vh;
+    font-size: 35px;
+    background-color: transparent;
+    text-align: center;
+    left: 5%;
+}
+
+.barNav ul {
+	list-style:none;
+    position: sticky;
+    top:200px;
+    width: 50px;
+    height:50px;
+    padding:0;
+    z-index: 130;
+}
+
+.barNav ul li {
+	color:#E9C573;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    font-size:40px;
+    z-index: 1;
+    cursor:pointer;
+}
+
+.barNav ul li:hover {
+	color:#e3985f;
+}
+
+.main {
+	margin: 7% 0;
+}
+
+.main  .Product {
+	border: 2px groove  #eee;
+	padding:0;
+	 margin:  20px 0;
+}
+
+
+
+.main  .Product a img{
+	height:280px;
+    width: 90%;
+    margin:5% auto 0 auto;
+    display:block;
+}
+.main  .Product a h2{
+    color: #564e4a;
+    font-size: 18px;
+    font-weight: 700;
+    text-align:center;
+    padding:10px 0 35px 0;
+
+}
+
+.main  .Product:hover {
+	border: 5px ridge  #f7f0c1;
+}
+
+.main  .Product:hover a h2{
+    color: #8c600e;
+    text-shadow:1px 1px 2px #f0e38b;
+}
+
+
+.pagination{
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    margin: 10px auto ;
+    width: 230px;
+
+}
+
+.pagination {
+	margin-bottom:70px;
+	position:relative;
+
+}
+
+.pagination a {
+	color:#198754;
+}
+#canvas{
+    position:fixed;
+    z-index: -1;
+}
+
+#f1 {
+	position:absolute;
+	right:-20px;
+	top:-10px;
+	font-size:16px;
+	font-weight:400;
+	color:#222;
+	border:2px solid #eee;
+	box-shadow:0px 0px 2px #DDF5D5;
+	border-radius:15px;
+	width:25px;
+	height:25px;
+	line-height:20px;
+	background:tomato;
+}
+
